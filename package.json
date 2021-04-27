@@ -1,0 +1,96 @@
+{
+  "name": "gatsby-portfolio",
+  "private": true,
+  "description": "A blog made with gatsby",
+  "version": "0.1.0",
+  "author": "Sellers Crisp",
+  "dependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-flow": "^7.13.13",
+    "@octokit/rest": "^18.5.2",
+    "@styled-icons/fluentui-system-regular": "^10.33.0",
+    "@styled-icons/remix-fill": "^10.18.0",
+    "@styled-icons/simple-icons": "^10.33.0",
+    "algoliasearch": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.23.3",
+    "gatsby-image": "^2.4.7",
+    "gatsby-plugin-algolia-search": "^0.5.7",
+    "gatsby-plugin-manifest": "^2.4.11",
+    "gatsby-plugin-netlify-cms": "^4.3.5",
+    "gatsby-plugin-offline": "^3.2.10",
+    "gatsby-plugin-react-helmet": "^3.3.4",
+    "gatsby-plugin-sitemap": "^2.4.5",
+    "gatsby-plugin-styled-components": "^3.3.4",
+    "gatsby-plugin-transition-link": "^1.18.0",
+    "gatsby-remark-autolink-headers": "^4.0.0",
+    "gatsby-remark-embedder": "^5.0.0",
+    "gatsby-remark-images": "^3.3.10",
+    "gatsby-remark-images-zoom": "^1.1.0",
+    "gatsby-remark-katex": "^5.0.0",
+    "gatsby-remark-lazy-load": "^1.0.2",
+    "gatsby-remark-prismjs": "^3.5.4",
+    "gatsby-remark-relative-images": "0.2.3",
+    "gatsby-source-filesystem": "^2.3.11",
+    "gatsby-transformer-remark": "^2.8.16",
+    "gatsby-transformer-sharp": "^2.5.5",
+    "gsap": "^3.3.3",
+    "katex": "^0.12.0",
+    "lazysizes": "^5.2.2",
+    "netlify-cms-app": "^2.12.15",
+    "prismjs": "^1.20.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-disqus-comments": "^1.4.0",
+    "react-dom": "^16.12.0",
+    "react-git-card": "^0.0.2",
+    "react-helmet": "^6.1.0",
+    "react-instantsearch-dom": "^6.6.0",
+    "react-tooltip": "^4.2.17",
+    "styled-components": "^5.1.1",
+    "styled-icons": "^10.33.0",
+    "styled-media-query": "^2.1.2",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "commitizen": "^4.1.2",
+    "cross-env": "^7.0.2",
+    "cz-conventional-changelog": "3.2.0",
+    "husky": "^4.2.5",
+    "prettier": "2.0.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "develop:playground": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
